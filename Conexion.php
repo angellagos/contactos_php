@@ -8,7 +8,7 @@
                 $db = new PDO("mysql:host=localhost;dbname=sistema1",
                             $usuario,$pass);
                 $db->setAttribute(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY,TRUE);
-                echo "Conectado";
+               // echo "Conectado";
                 return($db);
 
             } catch (PDOException $ex) {
